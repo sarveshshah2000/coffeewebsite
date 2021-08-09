@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            All About Coffee
+        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>All About Coffee</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="roasting.html">Roasting</a></li>
+                <li><a href="grinding.html">Grinding</a></li>
+                <li><a href="brewing.html">Brewing</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="survey.html">Coffee Survey</a></li>
+            </ul>
+        </nav>
+        </header>
+        <h1>Coffee Survey</h1>
+        <aside>
+            <figure>
+                <img src="images/espresso.jpg" alt="A cup of espresso">
+            </figure>
+        </aside>
+        <form action="coffee-survey.php" method="POST">
+            <fieldset>
+            <legend>Personal Information</legend>
+            Name<br>
+            <input type="text" name="name" required size="40"><br>    
+            Email<br>
+            <input type="email" name="Email" required placeholder="Enter a valid Email Address" size="40">
+            </fieldset>
+            <fieldset>
+            <legend>Your Coffee Preferences</legend>
+            Tell us your coffee preparation methods<br>
+            <textarea name="preparaion" cols="40" rows="6"></textarea><br><br>
+            Do you grind your own beans?<br>
+            <input type="radio" name="grind" value="Yes">Yes<br>
+            <input type="radio" name="grind" value="No">No<br>
+            <br>
+            How do you drink your coffee?<br>
+            <input type="checkbox" name="drink" value="Sugar">With Sugar<br>
+            <input type="checkbox" name="drink" value="Cream">With Cream<br>
+            <br>
+            What is your favourite coffee drink?<br>
+            <select name="favourite" id="">
+                <option value="">Please select a drink</option>
+                <option value="Drip">Drip Coffee</option>
+                <option value="French">French Press</option>
+                <option value="Espresso">Espresso</option>
+                <option value="Latte">Latte</option>
+                <option value="Flavoured">Flavoured</option>
+            </select>
+            </fieldset>
+        </form>
